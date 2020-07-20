@@ -1,13 +1,11 @@
-import { Payload } from "./Payload";
-import {Cargo} from './Cargo';
-import {cargo} from './index';
-import {astronauts} from './index';
+import { Payload } from './Payload';
 
 export class Astronaut implements Payload {
     massKg: number;
     name: string;
-    constructor(a: number, b: string) {
-        this.massKg = a;
-        this.name = b;
+
+    constructor (massKg: number, name: string) {
+        this.name = name;
+        this.massKg = massKg;
     }
-}
+ }

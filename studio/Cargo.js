@@ -2,9 +2,9 @@
 exports.__esModule = true;
 exports.Cargo = void 0;
 var Cargo = /** @class */ (function () {
-    function Cargo(a, b) {
-        this.massKg = a;
-        this.material = b;
+    function Cargo(massKg, material) {
+        this.material = material;
+        this.massKg = massKg;
     }
     return Cargo;
 }());

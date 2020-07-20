@@ -1,11 +1,10 @@
+import { Astronaut } from './Astronaut';
+import { Cargo } from './Cargo';
 import { Rocket } from './Rocket';
-import {Payload} from './Payload';
-import {Cargo} from './Cargo';
-import {Astronaut} from './Astronaut';
 
 let falcon9: Rocket = new Rocket('Falcon 9', 7500);
 
-export let astronauts: Astronaut[] = [
+let astronauts: Astronaut[] = [
    new Astronaut(75, 'Mae'),
    new Astronaut(81, 'Sally'),
    new Astronaut(99, 'Charles')
@@ -22,7 +21,7 @@ for (let i = 0; i < astronauts.length; i++) {
    console.log(`${astronaut.name}: ${status}`);
 }
 
-export let cargo: Cargo[] = [
+let cargo: Cargo[] = [
    new Cargo(3107.39, "Satellite"),
    new Cargo(1000.39, "Space Probe"),
    new Cargo(753, "Water"),
@@ -40,6 +39,5 @@ for (let i = 0; i < cargo.length; i++) {
    }
    console.log(`${c.material}: ${loaded}`);
 }
-console.log(typeof(cargo));
-console.log(`Final cargo and astronaut mass: ${falcon9.currentMassKg()} kg.`);
 
+console.log(`Final cargo and astronaut mass: ${falcon9.currentMassKg()} kg.`);
